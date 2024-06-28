@@ -1,0 +1,78 @@
+<nav class="flex items-center justify-between p-4 ">
+  <!-- Logo Section -->
+  <div class="flex items-center">
+    <img src="../../../assets/logo 1.png" alt="Logo" class="h-12">
+  </div>
+
+  <!-- Hamburger Menu for Mobile -->
+  <div class="block lg:hidden">
+    <button id="menu-button" class="text-black focus:outline-none" (click)="toggleMobileMenu()">
+      <i class="fas fa-bars w-6 h-6"></i>
+    </button>
+  </div>
+
+  <!-- Menu Section -->
+  <div class="hidden lg:flex space-x-8">
+    <a href="#" class="border-b border-transparent hover:border-black">FIND US</a>
+    <div class="relative group">
+      <button class="border-b border-transparent hover:border-black">TRATMENT</button>
+      <!-- Dropdown menu -->
+      <div class="absolute hidden mt-2 bg-white shadow-lg group-hover:block">
+        <a href="#" class="block px-4 py-2">Option 1</a>
+        <a href="#" class="block px-4 py-2">Option 2</a>
+      </div>
+    </div>
+    <a href="#" class="border-b border-transparent hover:border-black">GIFT CARD</a>
+    <div class="relative group">
+      <button class="border-b border-transparent hover:border-black">ABOUT US</button>
+      <!-- Dropdown menu -->
+      <div class="absolute hidden mt-2 bg-white shadow-lg group-hover:block">
+        <a href="#" class="block px-4 py-2">Option 1</a>
+        <a href="#" class="block px-4 py-2">Option 2</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search and Login Section for Desktop -->
+  <div class="hidden lg:flex items-center space-x-4">
+    <button class="p-2">
+      <i class="fas fa-search w-6 h-6"></i>
+    </button>
+    <button class="p-2">
+      <i class="fas fa-shopping-cart w-6 h-6"></i>
+    </button>
+    <button class="px-4 py-2 border border-purple-300 rounded-full text-purple-500 hover:bg-purple-100">Log In</button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" [ngClass]="{'hidden': !isMobileMenuOpen}" class="lg:hidden">
+  <a href="#" class="block px-4 py-2 hover:bg-purple-100">FIND US</a>
+  <div class="relative group">
+    <button class="block w-full text-left px-4 py-2 hover:bg-purple-100">TRATMENT</button>
+    <!-- Dropdown menu -->
+    <div class="absolute hidden mt-2 bg-white shadow-lg group-hover:block">
+      <a href="#" class="block px-4 py-2">Option 1</a>
+      <a href="#" class="block px-4 py-2">Option 2</a>
+    </div>
+  </div>
+  <a href="#" class="block px-4 py-2 hover:bg-purple-100">GIFT CARD</a>
+  <div class="relative group">
+    <button class="block w-full text-left px-4 py-2 hover:bg-purple-100">ABOUT US</button>
+    <!-- Dropdown menu -->
+    <div class="absolute hidden mt-2 bg-white shadow-lg group-hover:block">
+      <a href="#" class="block px-4 py-2">Option 1</a>
+      <a href="#" class="block px-4 py-2">Option 2</a>
+    </div>
+  </div>
+  <!-- Search and Login Section for Mobile -->
+  <div class="flex flex-col items-start space-y-2 mt-4 px-4">
+    <button class="p-2">
+      <i class="fas fa-search w-6 h-6"></i>
+    </button>
+    <button class="p-2">
+      <i class="fas fa-shopping-cart w-6 h-6"></i>
+    </button>
+    <button class="px-4 py-2 border border-purple-300 rounded-full text-purple-500 hover:bg-purple-100">Log In</button>
+  </div>
+</div>

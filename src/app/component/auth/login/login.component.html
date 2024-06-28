@@ -1,0 +1,68 @@
+<header class="bg-white shadow-md p-4 flex justify-between items-center">
+  <div class="flex items-center">
+    <img src="../../../../assets/logo 1.png" alt="Logo" class="h-12" />
+    <!-- زيادة حجم الشعار -->
+  </div>
+  <div class="flex items-center">
+    <span class="mr-2">En</span>
+    <div class="relative">
+      <button class="focus:outline-none">
+        <i class="fas fa-caret-down w-4 h-4 text-gray-700"></i>
+        <!-- استخدام Font Awesome للأيقونة -->
+      </button>
+    </div>
+  </div>
+</header>
+<div class=" flex items-center justify-center bg-white mt-28">
+  <div class="border p-8 rounded-3xl border-gray-400 w-full max-w-md">
+    <h3 class="text-4xl font-normal mb-4 text-center">
+      Wellcome Back
+    </h3>
+    <div class="text-center">
+      Register your account
+    </div>
+    <form>
+      <div class="my-8">
+        <div class="flex">
+          <select
+            class="mt-1 block p-2 border border-r-0 h-14 border-gray-300 rounded-l-3xl focus:outline-none "
+          >
+            <option>+966</option>
+          </select>
+          <input
+            type="text"
+            placeholder="Enter your number"
+            class="mt-1 block w-full p-2 h-14 border border-l-0 border-gray-300 rounded-r-3xl focus:outline-none"
+          />
+        </div>
+      </div>
+
+      <div class="text-end ed-ptn">
+        <button
+          type="submit"
+          class=" text-white p-4 w-40 rounded-full hover:shadow-lg focus:outline-none focus:ring focus:ring-purple-200"
+        >
+          Sign Up <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </form>
+    <p class="mt-4 text-center border-t pt-4">
+      Don’t have account ? <a  href="#"  routerLink="/component/sing-up" class="text-blue-600">Sign Up </a>
+    </p>
+  </div>
+</div>
+<!-- Part to be hidden on mobile screens -->
+<div class="hidden md:block">
+<div class="flex justify-center m-2">
+  <p class="w-32 text-center">follow us on</p>
+</div>
+<div class="mt-4 flex justify-center space-x-4">
+  <a href="#" class="text-gray-600 hover:text-gray-900 text-3xl"><i class="fab fa-facebook"></i></a>
+  <a href="#" class="text-gray-600 hover:text-gray-900 text-3xl"><i class="fab fa-instagram"></i></a>
+  <a href="#" class="text-gray-600 hover:text-gray-900 text-3xl"><i class="fab fa-snapchat"></i></a>
+  <a href="#" class="text-gray-600 hover:text-gray-900 text-3xl"><i class="fa-brands fa-x-twitter"></i></a>
+  <a href="#" class="text-gray-600 hover:text-gray-900 text-3xl"><i class="fab fa-youtube"></i></a>
+  <a href="#" class="text-gray-600 hover:text-gray-900 text-3xl"><i class="fab fa-tiktok"></i></a>
+</div>
+</div>
+
