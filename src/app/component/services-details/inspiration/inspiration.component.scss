@@ -1,0 +1,38 @@
+.over{
+  transition: .7s;
+}
+/* التأثير عند التمرير فوق العنصر */
+.manin .description {
+  max-height: 1.5rem;
+}
+.manin:hover .description {
+  overflow: visible;
+  text-overflow: ellipsis;
+  white-space: wrap ;
+  transition: .1s overflow text-overflow;
+}
+.inspiration{
+  width: 100%;
+}
+@media only screen and (min-width: 1029px){
+  .inspiration{
+    width: 95%;
+    margin: auto;
+  }
+}
+::-webkit-scrollbar {
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dfdfdf;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0;
+}

@@ -1,0 +1,23 @@
+
+
+
+
+
+
+@media (max-width: 640px) {
+.container {
+  @apply px-4;
+}
+.text-center {
+  @apply text-sm;
+}
+}
+
+@media (min-width: 640px) {
+.container {
+  @apply px-6;
+}
+.text-center {
+  @apply text-lg;
+}
+}

@@ -1,0 +1,39 @@
+<div class="grid md:m-auto w-full rounded-3xl md:w-[90%] ">
+  <div class="grid gap-4 md:grid-flow-col  bg-gray-50 p-10  rounded-lg shadow-md   ">
+    <div class=" pr-8">
+      <h2 class="md:text-3xl text-2xl font-semibold text-gray-800 mb-4">Frequently asked questions</h2>
+      <button class="bg-gradient-to-r main-btn text-white py-2 px-4 rounded-full shadow-lg hover:from-purple-500 hover:to-pink-600 transition duration-300">
+        See more FAQ →
+      </button>
+    </div>
+    <div class="w-full">
+      <div class="mb-4">
+        <div class="flex justify-between items-center border-b border-gray-300 py-2 cursor-pointer" (click)="toggle(1)">
+          <span class="text-gray-800">Are your clothes and towels disposable?</span>
+          <span class="text-gray-800"><i [ngClass]="{'fa-plus': !isOpen[1], 'fa-minus': isOpen[1]}" class="fas"></i></span>
+        </div>
+        <div *ngIf="isOpen[1]" class="text-gray-600 text-sm mt-2">
+          Yes, all our clothes and towels are disposable for your convenience and hygiene.
+        </div>
+      </div>
+      <div class="mb-4">
+        <div class="flex justify-between items-center border-b border-gray-300 py-2 cursor-pointer" (click)="toggle(2)">
+          <span class="text-gray-800">If I want to give a gift, what are the steps?</span>
+          <span class="text-gray-800"><i [ngClass]="{'fa-plus': !isOpen[2], 'fa-minus': isOpen[2]}" class="fas"></i></span>
+        </div>
+        <div *ngIf="isOpen[2]" class="text-gray-600 text-sm mt-2">
+          You can visit the <a href="#" class="text-blue-600">locations page</a> to know the opening hours of your preferred location.
+        </div>
+      </div>
+      <div class="mb-4">
+        <div class="flex justify-between items-center border-b border-gray-300 py-2 cursor-pointer" (click)="toggle(3)">
+          <span class="text-gray-800">Is it possible to pay in installments for services?</span>
+          <span class="text-gray-800"><i [ngClass]="{'fa-plus': !isOpen[3], 'fa-minus': isOpen[3]}" class="fas"></i></span>
+        </div>
+        <div *ngIf="isOpen[3]" class="text-gray-600 text-sm mt-2">
+          Yes, we offer installment plans for our services. Please contact our support for more details.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

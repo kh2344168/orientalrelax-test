@@ -1,0 +1,23 @@
+/* تخصيص شريط التمرير */
+::-webkit-scrollbar {
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dfdfdf;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0;
+}
+@media only screen and (min-width: 1029px){
+  .team-member{
+    width: 95%;
+    margin: auto;
+  }
+}

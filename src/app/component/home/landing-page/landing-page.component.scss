@@ -12,3 +12,12 @@
 .translated-two{
   transform: translateX(20%);
 }
+
+  .clip-left {
+    clip-path: inset(0 0 0 50%);
+  }
+
+  .clip-right {
+    clip-path: inset(0 50% 0 0);
+  }
+

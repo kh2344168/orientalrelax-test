@@ -1,0 +1,39 @@
+.treatment{
+  grid-template-columns: 30% 65%;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+.first{
+  img {
+    width: 100%;
+    transition:  .5s;
+    transform: scale(1.2);
+  }
+  .img-div{
+    transition:  .5s;
+    height:87%;
+  }
+}
+.first:hover{
+  img {
+    transform: scale(1);
+  }
+  .img-div{
+    height:80%;
+  }
+}
+.seconed{
+  img {
+    transition: height .5s;
+    height: 75%;
+    width: 100%;
+  }
+}
+
+.seconed:hover{
+  img {
+    transition: height .5s;
+    height: 60%;
+  }
+}

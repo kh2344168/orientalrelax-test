@@ -13,7 +13,7 @@ import { NgxOtpInputModule } from 'ngx-otp-input';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxOtpInputModule
+    NgxOtpInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
